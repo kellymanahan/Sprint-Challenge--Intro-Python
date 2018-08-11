@@ -21,28 +21,28 @@ humans = [
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with 'D':
-
+first_letter = ["D"]
 print("Starts with D:")
-r = []  # TODO
+r = [name for name in name if (name[0] in first_letters) ]  # TODO
 print(r)
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name ends in "e".
-
+last_letter = ["e"]
 print("Ends with e:")
-r = []  # TODO
+r = [name for name in name if (name[-1] in last_letter)]  # TODO
 print(r)
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with any letter between 'C' and 'G' inclusive.
-
+letters_between = ["C", "D", "E", "F", "G"]
 print("Starts between C and G, inclusive:")
-r = []  # TODO
+r = [name for name in name if (name[0] in letters_between)]  # TODO
 print(r)
 
 # Write a list comprehension that creates a list of all the ages plus 10.
 print("Ages plus 10:")
-r = []  # TODO
+r = [age for age in age.append(age + 10)]  # TODO
 print(r)
 
 # Write a list comprehension that creates a list of strings which are the name
@@ -55,7 +55,7 @@ print(r)
 # age, for example ("David", 31), for everyone between the ages of 27 and 32,
 # inclusive.
 print("Names and ages between 27 and 32:")
-r = []  # TODO
+r = [ ]  # TODO
 print(r)
 
 # Write a list comprehension that creates a list of new Humans like the old

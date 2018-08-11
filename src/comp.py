@@ -21,34 +21,32 @@ humans = [
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with 'D':
-first_letter = ["D"]
+
 print("Starts with D:")
-r = [name for name in name if (name[0] in first_letters) ]  # TODO
+r = [i for i in humans if i.name[0] == "D"]  # TODO
 print(r)
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name ends in "e".
-last_letter = ["e"]
 print("Ends with e:")
-r = [name for name in name if (name[-1] in last_letter)]  # TODO
+r = [i for i in humans if i.name[-3]== "e"]  # TODO
 print(r)
 
 # Write a list comprehension that creates a list of names of everyone
 # whose name starts with any letter between 'C' and 'G' inclusive.
-letters_between = ["C", "D", "E", "F", "G"]
 print("Starts between C and G, inclusive:")
-r = [name for name in name if (name[0] in letters_between)]  # TODO
+r = [ i for i in humans if i.name[0] >= "C" or i.name[0] <= "G" ]  # TODO
 print(r)
 
 # Write a list comprehension that creates a list of all the ages plus 10.
 print("Ages plus 10:")
-r = [age for age in age.append(age + 10)]  # TODO
+r = [f'{i.age + 10}' for i in humans]  # TODO
 print(r)
 
 # Write a list comprehension that creates a list of strings which are the name
 # joined to the age with a hyphen, for example "David-31", for all humans.
 print("Name hyphen age:")
-r = []  # TODO
+r = [f'{i.name}-{i.age}' for i in humans]  # TODO
 print(r)
 
 # Write a list comprehension that creates a list of tuples containing name and
